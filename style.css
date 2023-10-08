@@ -1,0 +1,87 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+body {
+    background: rgb(209,189,5);
+    background: radial-gradient(circle, rgba(209,189,5,1) 7%, rgba(220,19,4,1) 99%);
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb {
+background-color:rgba(220,19,4,1);
+border-radius:5px;
+ 
+}
+.container {
+    padding:20px;
+}
+
+.container h1 {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.container h1 img {
+width:45px;
+height:45px;
+}
+.container button {
+    padding:10px 20px;
+    margin:15px 0;
+    border-radius:20px;
+    background-color:#000;
+    color: rgba(220,19,4,1);
+    border:1px solid #000;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:-1px 4px 5px rgba(0,0,0,0.7)
+}
+.container button:hover {
+    border-color:transparent;
+    background-color:transparent;
+    
+    color:#000;
+}
+.container .input-box {
+    position:relative;
+    width:500px;
+    min-height:200px;
+}
+.container .input-box p {
+    padding:10px;
+    width:500px;
+    min-height:200px;
+    background-color:#000;
+    border-radius:5px;
+    color:#fff;
+  
+    box-shadow:-1px 4px 5px rgba(0,0,0,0.7);
+    margin-bottom:15px;
+   
+ 
+  
+}
+ 
+.container .input-box p:focus {
+    outline:none;
+    border:2px solid  rgba(220,19,4,1);
+}
+.container .input-box  i.trash {
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    color:#fff;
+}
+.container .input-box i.trash:hover {
+    color:rgba(220,19,4,1);
+}
+
+
